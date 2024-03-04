@@ -1,0 +1,65 @@
+<div class="container-fluid">
+    <a class="navbar-brand" style="color: #ffffe6;" href="menu.php">固定資產盤點系統</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" style="color: #ffffe6;" aria-current="page" href="fir01.php">初盤</a>
+
+            <li class="nav-item">
+                <a class="nav-link active" style="color: #ffffe6;" aria-current="page" href="sec02.php">複盤</a>
+
+            <li class="nav-item">
+                <a class="nav-link active" style="color: #ffffe6;" aria-current="page"
+                    href="display_depfirnot.php">顯示初盤未盤點資料</a>
+
+            <li class="nav-item">
+                <a class="nav-link active" style="color: #ffffe6;" aria-current="page"
+                    href="display_depsecnot.php">顯示複盤未盤點資料</a>
+
+            <li class="nav-item">
+                <a class="nav-link active" style="color: #ffffe6;" aria-current="page"
+                    href="display_depnot.php">顯示初盤、複盤後資料</a>
+
+            <!-- <li class="nav-item">
+                <a class="nav-link active" style="color: #ffffe6;" aria-current="page"
+                    href="inv_excel_download.php">下載盤點結果</a> -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="color: #ffffe6;" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    下載盤點結果
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" style="text-align: right;"  href="inv3000_excel_download.php">下載管理處盤點結果</a></li>
+                    <li><a class="dropdown-item" style="text-align: right;"  href="inv7000_excel_download.php">下載資訊處盤點結果</a></li>
+                    <li><a class="dropdown-item" href="inv5000_excel_download.php">下載營業處盤點結果</a></li>
+                    <li><a class="dropdown-item" href="inv8000_excel_download.php">下載財務處盤點結果</a></li>
+                    <li><a class="dropdown-item" href="inv19000_excel_download.php">下載品管中心盤點結果</a></li>
+                    <li><a class="dropdown-item" href="inv1000_excel_download.php">下載總經理室盤點結果</a></li>
+                    <li><a class="dropdown-item" href="inv9000_excel_download.php">下載再生醫學處盤點結果</a></li>
+                    <li><a class="dropdown-item" href="invA000_excel_download.php">下載醫學服務處盤點結果</a></li>
+                    <li><a class="dropdown-item" href="inv17000_excel_download.php">下載分子檢測服務處盤點結果</a></li>
+                    <li><a class="dropdown-item" href="inv20000_excel_download.php">下載生物資訊研究中心盤點結果</a></li>
+
+                </ul>
+            </li>
+
+
+
+                <?php if($_SESSION["username"] == "tina"): ?>
+            <li class="nav-item">
+                <a class="nav-link active" style="color: #ffffe6;" aria-current="page" href="import.php">匯入csv檔</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" style="color: #ffffe6;" aria-current="page" href="truncate_table.php">刪除
+                    Table</a>
+            </li>
+            <?php endif; ?>
+        </ul>
+    </div>
+    <a class="navbar-brand" style="color: #ffffe6;" href="logout.php">登出</a>
+</div>
